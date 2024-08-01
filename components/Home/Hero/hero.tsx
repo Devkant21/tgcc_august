@@ -49,14 +49,14 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}
-                    className="flex flex-col w-full md:w-1/2 max-w-[650px] space-y-4 p-4 md:p-0"
+                    className="flex flex-col w-full md:w-1/2 max-w-[569px] space-y-4 p-4 md:p-0"
                 >
                     <motion.h1 variants={childVariants}>
                         A Timeless Ode to the Spirits of India
                     </motion.h1>
-                    <motion.p variants={childVariants}>
+                    <motion.div variants={childVariants} className='para'>
                         Embark on a journey where exploration, tasting, and learning intertwine to redefine epicurean experiences.
-                    </motion.p>
+                    </motion.div>
                 </motion.div>
             </div>
             <motion.div
@@ -65,7 +65,7 @@ const Hero = () => {
                 variants={containerVariants}
                 className=''
             >
-                <button className='heroButton heroButtonText p-4 md:min-w-[350px] flex items-center justify-center gap-4'>
+                <button className='heroButton p-4 md:min-w-[360px] md:min-h-[81px] flex items-center justify-center gap-4'>
                     KNOW MORE
                     <span>
                         <Image src='/svg/arrowR.svg' alt='Arrow' width={0} height={0} className='w-[30px] h-auto' />
