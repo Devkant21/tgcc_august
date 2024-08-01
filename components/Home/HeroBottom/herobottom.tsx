@@ -22,7 +22,7 @@ const HeroBottom = () => {
                 <motion.h2 variants={childVariants} className="text-center">
                     In The Pursuit Of Good
                 </motion.h2>
-                <motion.p variants={childVariants} className="bottomP text-center max-w-[800px]">
+                <motion.p variants={childVariants} className="bottomP text-center max-w-[550px] lg:max-w-[800px]">
                     We exist in the passionate pursuit of the good. We are driven to become a benchmark for positive change in the world by producing more conscious spirits that help us give back in any way we can.
                 </motion.p>
             </motion.div>

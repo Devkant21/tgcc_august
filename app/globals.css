@@ -16,6 +16,8 @@
   font-family: 'Manier_Medium';
   src: url('/typography/Manier/Manier-Medium.otf');  
   font-display: swap;
+  font-weight: 200;
+
 }
 @font-face {
   font-family: 'Uniform_Regular_2';
@@ -57,9 +59,10 @@ body{
 }
 
 h1{
-  font-family: Manier_Light;
+  font-style: normal;
+  font-family: Manier_Regular;
   font-size: var(--h1);
-  line-height: 0.9;
+  line-height: 74px;
 }
 h2{
   font-family: Manier_Light;

@@ -35,14 +35,12 @@ const Navbar = () => {
     return (
         <section className={`navbar ${visible ? '' : ''} ${scrolled ? 'scrolled' : 'transparent'}`}>
             {/* PC */}
-            <nav className="hidden md:flex items-center md:px-[7rem] gap-10 justify-evenly p-4">
-                <div><Link href='/'><Image src={scrolled ? '/svg/greenlogo.svg' : '/svg/whitelogo.svg'} alt='Brand Logo' width={0} height={0} className="w-[55px] h-[55px]" priority /></Link></div>
-                <div className='navLink'><Link href='#'>OUR BUSINESS</Link></div>
-                <div className='navLink'><Link href='#'>OUR BRANDS</Link></div>
-                <div className='navLink'><Link href='#'>NEWS & MEDIA</Link></div>
-                <div className='navLink'><Link href='#'>INVESTORS</Link></div>
-                <div className='navLink'><Link href='#'>CAREERS</Link></div>
-                <div className=''><FaSearch size={16} /></div>
+            <nav className="hidden md:flex items-center gap-10 justify-evenly p-4 w-full">
+                <div className='navLink'><Link href='#'>Who we are</Link></div>
+                <div className='navLink'><Link href='#'>Experience</Link></div>
+                <div className='mr-12'><Link href='/'><Image src={scrolled ? '/svg/greenlogo.svg' : '/svg/whitelogo.svg'} alt='Brand Logo' width={0} height={0} className="w-[55px] h-[55px]" priority /></Link></div>
+                <div className='navLink'><Link href='#'>Brands</Link></div>
+                <div className='navLink'><Link href='#'>Academy</Link></div>
             </nav>
             {/* MOBILE */}
             <nav className="flex md:hidden p-4 items-center justify-between">
