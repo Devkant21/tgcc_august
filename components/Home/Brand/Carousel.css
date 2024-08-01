@@ -1,0 +1,16 @@
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .carousel-image.active {
+    opacity: 1;
+  }
+  .desc{
+    background-color: #ffffff16;
+  }

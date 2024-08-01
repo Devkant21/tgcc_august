@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Manier_Regular';
+  src: url('/typography/Manier/Manier-Regular.otf');  
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manier_Light';
+  src: url('/typography/Manier/Manier-Light.otf');  
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manier_Medium';
+  src: url('/typography/Manier/Manier-Medium.otf');  
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Uniform_Regular_2';
+  src: url('/typography/Uniform/Uniform_B_2.ttf');  
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Uniform_Regular_3';
+  src: url('/typography/Uniform/Uniform_R3.ttf');  
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Uniform_Regular_4';
+  src: url('/typography/Uniform/Uniform_U_R4.ttf');  
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --h1: clamp(2rem, 5vw + 1rem, 4rem);
+  --h2: clamp(1.8rem, 4vw + 2rem, 5.625rem);
+  --h3: clamp(1.4rem, 3.5vw + 1rem, 3.5rem);
+  --h4: clamp(1.4rem, 3.5vw + 1rem, 3.75rem);
+  --h5: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
+  --MR: Manier_Regular;
+  --R2: Uniform_Regular_2;
+  --R3: Uniform_Regular_3;
+  --R4: Uniform_Regular_4;
+  --primaryColor: #4C5730;
+  ::-webkit-scrollbar {
+    display:none
+  };
+}
+body{
+  color: #fff;
+  font-family: Uniform_Regular_3;
+}
+
+h1{
+  font-family: Manier_Light;
+  font-size: var(--h1);
+  line-height: 0.9;
+}
+h2{
+  font-family: Manier_Light;
+  font-size: var(--h2);
+  line-height: 0.9;
+}
+h3{
+  font-family: Manier_Light;
+  font-size: var(--h3);
+  line-height: 0.9;
+}
+h4{
+  font-family: Manier_Light;
+  font-size: var(--h4);
+  line-height: 0.9;
+}
+h5{
+  font-family: var(--R2);
+  font-size: var(--h5);
+  line-height: 0.9;
+}

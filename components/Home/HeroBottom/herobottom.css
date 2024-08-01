@@ -1,0 +1,6 @@
+.bottomP{
+    font-size: clamp(1.4rem, 2vw + 1rem, 1.875rem);
+}
+.CarRight{
+    background-color: #9B7347;
+}

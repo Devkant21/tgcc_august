@@ -1,0 +1,11 @@
+input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+.bgColor {
+    background-color: rgba(233, 226, 207, 0.3);
+}
+.BookNow p{
+    font-family: var(--R4);
+    font-size: clamp(0.5rem, 1vw + 0.7rem, 1.625rem);
+}

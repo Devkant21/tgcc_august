@@ -1,0 +1,72 @@
+"use client";
+
+import './Navbar.css';
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState, useEffect } from 'react';
+import { FaSearch } from "react-icons/fa";
+import { RiMenuLine, RiCloseFill } from "react-icons/ri";
+
+const Navbar = () => {
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+
+            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+
+            // To change the navbar bg color
+            setScrolled(currentScrollPos > window.innerHeight / 2);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos, visible]);
+
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
+    return (
+        <section className={`navbar ${visible ? '' : ''} ${scrolled ? 'scrolled' : 'transparent'}`}>
+            {/* PC */}
+            <nav className="hidden md:flex items-center md:px-[7rem] gap-10 justify-evenly p-4">
+                <div><Link href='/'><Image src={scrolled ? '/svg/greenlogo.svg' : '/svg/whitelogo.svg'} alt='Brand Logo' width={0} height={0} className="w-[55px] h-[55px]" priority /></Link></div>
+                <div className='navLink'><Link href='#'>OUR BUSINESS</Link></div>
+                <div className='navLink'><Link href='#'>OUR BRANDS</Link></div>
+                <div className='navLink'><Link href='#'>NEWS & MEDIA</Link></div>
+                <div className='navLink'><Link href='#'>INVESTORS</Link></div>
+                <div className='navLink'><Link href='#'>CAREERS</Link></div>
+                <div className=''><FaSearch size={16} /></div>
+            </nav>
+            {/* MOBILE */}
+            <nav className="flex md:hidden p-4 items-center justify-between">
+                <div><Link href='/'><Image src={scrolled ? '/svg/greenlogo.svg' : '/svg/whitelogo.svg'} alt='Brand Logo' width={0} height={0} className="w-[55px] h-[55px]" priority /></Link></div>
+                {sidebarOpen ? (
+                    <RiCloseFill size={32} className="block md:hidden cursor-pointer text-[#4A6B7B] z-[999]" onClick={toggleSidebar} />
+                ) : (
+                    <RiMenuLine size={32} className="block md:hidden cursor-pointer" onClick={toggleSidebar} />
+                )}
+            </nav>
+            {/* SIDEBAR */}
+            {sidebarOpen && (
+                <div className="mSidebar md:hidden flex flex-col items-center justify-center gap-4 p-6">
+                    <ul>
+                        <li><Link href='#'>OUR BUSINESS</Link></li>
+                        <li><Link href='#'>OUR BRANDS</Link></li>
+                        <li><Link href='#'>NEWS & MEDIA</Link></li>
+                        <li><Link href='#'>INVESTORS</Link></li>
+                        <li><Link href='#'>CAREERS</Link></li>
+                    </ul>
+                </div>
+            )}
+        </section>
+    );
+};
+
+export default Navbar;

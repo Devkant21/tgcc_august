@@ -1,0 +1,25 @@
+.heroBody {
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease-in-out;
+}
+
+.bgImage1 {
+    background-image: url('/image/bg.webp');
+}
+
+.bgImage2 {
+    background-image: url('/image/bg2.webp');
+}
+
+.heroBody p {
+    font-family: var(--R3);
+    line-height: 1;
+    font-size: clamp(1.65rem, 2.5vw + 0.5rem, 2.25rem);
+}
+
+.heroButton {
+    background-color: var(--primaryColor);
+    opacity: 90%;
+    font-size: clamp(0.8rem, 1.5vw + 0.5rem, 1.5rem);
+}
