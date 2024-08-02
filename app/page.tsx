@@ -9,11 +9,13 @@ import Hero from "@/components/Home/Hero/hero";
 import BottomCarousel from "@/components/Home/HeroBottom/bottomCarousel";
 import HeroBottom from "@/components/Home/HeroBottom/herobottom";
 import MapSection from "@/components/Home/Map/MapSection";
+import AgeConsent from "@/components/Consent/consent";
 
 export default function Home() {
   return (
     <main>
       <SmoothScroll>
+        <AgeConsent />
         <Hero />
         <HeroBottom />
         {/* <BottomCarousel /> */}
