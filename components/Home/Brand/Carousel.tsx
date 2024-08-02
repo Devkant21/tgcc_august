@@ -5,9 +5,9 @@ import { useState } from "react";
 import Image from "next/image";
 
 const images = [
-    { src: "/image/C1.webp", alt: "Image 1", title: "ACADEMY", desc: "Perfect the fundamentals of bartending and service, with modules covering everything from product knowledge to the art of creating great drinks." },
-    { src: "/image/C2.webp", alt: "Image 2", title: "ACADEMY", desc: "Learn advanced bartending techniques, from flair to mixology, and master the art of crafting unique and memorable cocktails." },
-    { src: "/image/C3.webp", alt: "Image 3", title: "ACADEMY", desc: "Gain comprehensive knowledge about different types of spirits and their origins, and how to use them in various cocktails." },
+    { src: "/image/C1.webp", alt: "Image 1", title: "ACADEMY", desc: "The Good Craft Co Academy offers an immersive experience into the world of Indian craft spirits, where visitors can learn about artisanal distilling techniques, and the rich heritage of local ingredients. Attendees will gain hands-on knowledge of crafting premium spirits and an appreciation for the artistry and innovation that define the craft spirits industry. This academy is a must-visit for anyone passionate about fine beverages and eager to deepen their understanding of the craft behind exceptional spirits." },
+    { src: "/image/C2.webp", alt: "Image 2", title: "LAB", desc: "The Good Craft Co Lab offers a unique glimpse into the science of spirit-making, allowing visitors to explore the intricate processes behind crafting exceptional spirits. Guests will experience the world of rare spirits and Indian cocktails, gaining insights into flavor profiles, distillation techniques, and the innovation driving the craft spirits industry." },
+    { src: "/image/C3.webp", alt: "Image 3", title: "FERMENTARY", desc: "The Good Craft Co Fermentary showcases natural fermentation techniques, pushing the boundaries of flavors in craft spirits. Visitors can witness the transformative power of fermentation and learn how innovative methods create unique and complex tastes. This is a must-visit for those interested in the art and science behind exceptional flavor development in craft beverages." },
 ];
 
 const BrandCarousel = () => {
@@ -70,7 +70,7 @@ const BrandCarousel = () => {
                                 />
                             </div>
                         ))}
-                        <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-1 max-w-[400px] opacity-85">
+                        <div className="hidden md:block absolute top-1/2 right-0 transform -translate-y-12 max-w-[600px] h-auto opacity-85">
                             <div className="flex flex-col">
                                 <div className="bg-[#416E80] p-4 flex items-center justify-center">{images[currentIndex].title}</div>
                                 <div className="bg-[#E9E2CF] text-[#416E80] p-4">
