@@ -4,6 +4,7 @@ import './Map.css'
 
 import React, { useState } from 'react';
 import MapSVG from './MapSVG';
+import Image from 'next/image';
 
 interface LocData {
     wineType: string;
@@ -26,7 +27,10 @@ const MapSection: React.FC = () => {
                 <div className='flex flex-col justify-center space-y-4'>
                     <div className='H4 text-5xl font-semibold lg:w-[400px]'>Home to <br /> Conscious Spirits</div>
                     <div className='w-full md:max-w-[400px] mapDesc'>Unfold the story of diversity within India. Through the lens of crafted spirits.</div>
-                    <div className='text-sm'>Hover on the map to discover rare Indian spirits</div>
+                    <div className='text-sm flex items-center gap-2'>
+                        Hover on the map to discover rare Indian spirits
+                        <span><Image src='/svg/arrowRmap.svg' alt='Arrow Right' width={0} height={0} className='w-[25px] h-[25px]'/></span>
+                    </div>
                 </div>
                 <div className='flex w-auto'>
                     <MapSVG onHover={handleHover} />
