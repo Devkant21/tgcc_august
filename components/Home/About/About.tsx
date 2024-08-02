@@ -29,7 +29,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className='p-4 md:p-0 aboutBody flex items-center justify-center h-auto w-full py-20 md:py-0'>
+        <section id='experience' className='p-4 md:p-0 aboutBody flex items-center justify-center h-auto w-full py-20 md:py-0'>
             <div className="flex flex-col md:flex-row items-center justify-between w-full h-auto text-[#E9E2CF] md:space-x-20">
                 <motion.div
                     ref={ref}

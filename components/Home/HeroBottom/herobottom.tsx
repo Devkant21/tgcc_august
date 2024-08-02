@@ -11,7 +11,7 @@ const HeroBottom = () => {
   const isInView = useIntersectionObserver(ref, { threshold: 0.5 });
 
   return (
-    <section className="py-40 bg-[var(--primaryColor)] flex items-center justify-center">
+    <section id='whoweare' className="py-40 bg-[var(--primaryColor)] flex items-center justify-center">
       <motion.div
         ref={ref}
         initial="hidden"

@@ -39,10 +39,10 @@ const Navbar = () => {
       {/* PC */}
       <nav className="hidden md:flex items-center gap-10 justify-evenly p-4 w-full">
         <div className="navLink">
-          <Link href="#">Who we are</Link>
+          <Link href="#whoweare">Who we are</Link>
         </div>
         <div className="navLink">
-          <Link href="#">Experience</Link>
+          <Link href="#experience">Experience</Link>
         </div>
         <div className="mr-12">
           <Link href="/">
@@ -57,10 +57,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navLink">
-          <Link href="#">Brands</Link>
+          <Link href="#brands">Brands</Link>
         </div>
         <div className="navLink">
-          <Link href="#">Academy</Link>
+          <Link href="#academy">Academy</Link>
         </div>
       </nav>
       {/* MOBILE */}
