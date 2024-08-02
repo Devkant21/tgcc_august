@@ -26,10 +26,10 @@ const Hero = () => {
   return (
     // <section className={`heroBody h-screen w-full flex flex-col justify-center space-y-4 ${bgClass}`}>
     <section
-      className={`h-screen w-full flex flex-col justify-center space-y-4 relative overflow-hidden`}
+      className={`h-screen w-full flex flex-col justify-center space-y-4 relative overflow-hidden pt-[80px]`}
     >
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover pt-[80px]"
         src="/video/bgvid.mp4"
         autoPlay
         loop
@@ -59,7 +59,7 @@ const Hero = () => {
           </motion.h1>
           <motion.div
             variants={childVariants}
-            className="para text-justify line-clamp-5 "
+            className="para line-clamp-5 "
           >
             Embark on a journey where exploration, tasting, and learning
             intertwine to redefine epicurean experiences.

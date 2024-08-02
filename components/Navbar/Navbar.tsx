@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="mr-12">
           <Link href="/">
             <Image
-              src={scrolled ? "/svg/greenlogo.svg" : "/svg/whitelogo.svg"}
+              src={scrolled ? "/svg/greenlogo.svg" : "/svg/greenlogo.svg"}
               alt="Brand Logo"
               width={0}
               height={0}
@@ -68,7 +68,7 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <Image
-              src={scrolled ? "/svg/greenlogo.svg" : "/svg/whitelogo.svg"}
+              src={scrolled ? "/svg/greenlogo.svg" : "/svg/greenlogo.svg"}
               alt="Brand Logo"
               width={0}
               height={0}
