@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import { MdPhoneIphone, MdMailOutline } from "react-icons/md";
 
 const FootLinks = [
     {
@@ -61,7 +62,7 @@ const Footer = () => {
     return (
         <section className="md:px-[112px] bg-[#2E4149] py-20 px-4 md:px-0">
             <footer className="flex flex-col items-center justify-center space-y-16">
-                <div className="w-full flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0 p-4 md:p-0">
+                <div className="w-full flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0 p-4 md:p-0">
                     <div>
                         <Image src='/svg/whitelogo.svg' alt='LOGO' width={0} height={0} className="w-[100px] h-[100px]" />
                     </div>
@@ -86,6 +87,10 @@ const Footer = () => {
                             <li>Whitefield, Bangalore XXXXXX</li>
                         </ul>
                     </div> */}
+                    <div className="flex flex-col md:flex-row md:items-end md:gap-6">
+                        <p className="flex gap-1 items-center"><b>Contact Us:</b> <MdPhoneIphone size={16} /> +91 9876543210</p>
+                        <p className="flex gap-1 items-center"><b>Email: </b> <MdMailOutline size={16} /> xyz@tgccinfo.com</p>
+                    </div>
                     <div className="flex items-end gap-6">
                         <Link href='https://facebook.com/tgccindia' target="_blank" rel="noopener noreferrer">
                             <FaFacebook size={24} />
