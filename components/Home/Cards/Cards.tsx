@@ -30,7 +30,7 @@ const Cards = () => {
     const isInView = useIntersectionObserver(ref, { threshold: 0.5 });
 
     return (
-        <section id='academy' className="pb-40 ">
+        <section id='academy' className="pb-10 md:pb-40 ">
             <div className=" flex flex-col items-center justify-center space-y-8">
                 <h1>LOREM IPSUM</h1>
                 <div className='w-full'>
