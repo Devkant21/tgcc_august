@@ -14,3 +14,13 @@
   .desc{
     background-color: #ffffff16;
   }
+
+  .brandH{
+    font-size: var(--h1);
+    font-family: var(--MM);
+  }
+
+  .brandp{
+    font-family: var(--R4);
+    font-size: clamp(18px, 1.5vw + 0.5rem, 30px);
+  }
