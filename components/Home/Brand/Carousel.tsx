@@ -71,11 +71,11 @@ const BrandCarousel = () => {
                                 />
                             </div>
                         ))}
-                        <div className="absolute top-1/2 right-0 transform md:-translate-y-20 max-w-[600px] h-auto opacity-85">
+                        <div className="absolute top-1/2 right-0 transform md:-translate-y-1 max-w-[600px] h-auto opacity-85">
                             <div className="flex flex-col">
                                 <div className="bg-[#416E80] p-4 flex items-center justify-center">{images[currentIndex].title}</div>
                                 <div className="bg-[#E9E2CF] text-[#416E80] p-4">
-                                    <p className="hidden md:block">{images[currentIndex].desc}</p>
+                                    <p className="hidden md:block">{images[currentIndex].mdesc}</p>
                                     <p className="block md:hidden">{images[currentIndex].mdesc}</p>
                                 </div>
                             </div>
