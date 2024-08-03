@@ -52,9 +52,9 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className="flex flex-col w-full md:w-1/2 max-w-[569px] space-y-4 p-4 md:p-0"
+          className="flex flex-col w-full md:w-1/2 max-w-[569px] space-y-8 p-4 md:p-0"
         >
-          <motion.h1 variants={childVariants} className="Manier_Light">
+          <motion.h1 variants={childVariants} className="">
             A Timeless Ode to the Spirits of India
           </motion.h1>
           <motion.div
@@ -70,7 +70,7 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className=""
+        className="pt-4"
       >
         <button className="heroButton p-4 md:min-w-[360px] md:min-h-[81px] flex items-center justify-center gap-4">
           KNOW MORE

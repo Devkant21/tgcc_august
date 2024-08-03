@@ -22,14 +22,14 @@ const MapSection: React.FC = () => {
     };
 
     return (
-        <section className="mapSection flex items-center justify-center py-20 md:px-[112px]">
+        <section className="mapSection flex items-center justify-center py-20 md:px-[84px]">
             <div className='flex flex-col lg:flex-row justify-evenly gap-2 p-4 md:p-0'>
                 <div className='flex flex-col justify-center space-y-4'>
-                    <div className='H4 text-5xl font-semibold lg:w-[400px]'>Home to <br /> Conscious Spirits</div>
+                    <div className='H4 text-5xl font-medium lg:w-[450px]'>Home to <br /> Conscious Spirits</div>
                     <div className='w-full md:max-w-[400px] mapDesc'>Unfold the story of diversity within India. Through the lens of crafted spirits.</div>
                     <div className='text-sm flex items-center gap-2'>
                         Hover on the map to discover rare Indian spirits
-                        <span><Image src='/svg/arrowRmap.svg' alt='Arrow Right' width={0} height={0} className='w-[25px] h-[25px]'/></span>
+                        <span><Image src='/svg/arrowRmap.svg' alt='Arrow Right' width={0} height={0} className='w-[20px] h-[20px]' /></span>
                     </div>
                 </div>
                 <div className='flex w-auto'>
