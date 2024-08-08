@@ -32,7 +32,7 @@ const AgeConsent: React.FC = () => {
 
     return (
         <section className="ageConsentSection">
-            <div className='wrapContainer UniformRegular space-y-6'>
+            <div className='wrapContainer UniformRegular space-y-2 md:space-y-6 p-2 md:p-[50px]'>
                 <Image src="/svg/bird.svg" alt="Bird SVG" width={50} height={50} className="birdSVG" />
                 <div className="absolute bottom-6 left-6 w-[300px] h-auto md:block hidden ">
                     <Image src="/svg/consentB.svg" alt="ConsentT SVG" width={0} height={0} className='w-[300px] h-auto' />
@@ -49,7 +49,7 @@ const AgeConsent: React.FC = () => {
                         <p className='text-red-400'>Sorry, your age does not permit you to enter at this time. Please close the site.</p>
                     </div>
                 )}
-                <div className='flex space-x-6 text-[25px] z-10'>
+                <div className='flex space-x-6 text-[1.55rem] z-10'>
                     <button onClick={() => handleConsent('yes')} className='bg-white text-black p-2 px-6 rounded-md'>YES</button>
                     <button onClick={() => handleConsent('no')} className='bg-white text-black p-2 px-6 rounded-md'>NO</button>
                 </div>
