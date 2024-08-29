@@ -32,7 +32,7 @@ const Cards = () => {
     return (
         <section id='academy' className="pb-10 md:pb-40 ">
             <div className=" flex flex-col items-center justify-center space-y-8">
-                <h1>LOREM IPSUM</h1>
+                <h1>INSPIRED BY GOODNESS, <br></br>CRAFTED TO GIVE BACK</h1>
                 <div className='w-full'>
                     <BrandCarousel />
                 </div>
