@@ -60,7 +60,9 @@ const BookNow = () => {
     return (
         <section className="BookNow md:px-[56px] pb-20">
             <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10">
-                <button className="text-7xl pb-10">Book Now</button>
+                <button className="text-4xl rounded-full bg-slate-900 p-8">Book Now</button>
+                {/* <button className="text-4xl pb-10 rounded-full bg-slate-900 p-8">Book Now</button> */}
+                
                 {/* <div className="w-full">
                     <form className='flex flex-col flex-wrap gap-6 w-full md:space-y-4 justify-center' onSubmit={handleSubmit}>
                         <div className='flex flex-wrap gap-6 w-full'>
