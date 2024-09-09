@@ -61,7 +61,7 @@ const BookNow = () => {
         <section className="BookNow md:px-[56px] pb-20">
             <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10">
                 <h1 className="pb-10">Book Now</h1>
-                <div className="w-full">
+                {/* <div className="w-full">
                     <form className='flex flex-col flex-wrap gap-6 w-full md:space-y-4 justify-center' onSubmit={handleSubmit}>
                         <div className='flex flex-wrap gap-6 w-full'>
                             <input
@@ -173,7 +173,7 @@ const BookNow = () => {
                             </button>
                         </div>
                     </form>
-                </div>
+                </div> */}
             </div>
         </section>
     );
