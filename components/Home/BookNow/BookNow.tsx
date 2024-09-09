@@ -59,7 +59,8 @@ const BookNow = () => {
 
     return (
         <section className="BookNow md:px-[56px] pb-20">
-            <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10">
+            {/* <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10"> */}
+                <div className=" flex flex-col items-center justify-center p-10">
                 <button className="text-4xl rounded-full bg-slate-900 p-8">Book Now</button>
                 {/* <button className="text-4xl pb-10 rounded-full bg-slate-900 p-8">Book Now</button> */}
                 
