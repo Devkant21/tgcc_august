@@ -57,7 +57,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navLink">
-          <Link href="#brands">Brands</Link>
+          <Link href="#">Blogs</Link>
         </div>
         <div className="navLink">
           <Link href="#academy">Academy</Link>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <Link href="#">Experience</Link>
             </li>
             <li>
-              <Link href="#">Brands</Link>
+              <Link href="#">Blogs</Link>
             </li>
             <li>
               <Link href="#">Academy</Link>

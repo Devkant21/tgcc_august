@@ -24,7 +24,7 @@ export default function Home() {
         <div className="bg-gradient-to-b from-[#416E80] to-[#2E4149] to-95% p-2 md:p-0">
           <Brand />
           <Cards />
-          <BookNow />
+          {/* <BookNow /> */}
           {/* <BrandCarousel /> */}
         </div>
       </SmoothScroll>
