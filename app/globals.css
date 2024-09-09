@@ -61,18 +61,18 @@ body{
 
 h1{
   font-style: normal;
-  font-family: Manier_Light;
-  font-size: var(--h1);
+  font-family: Manier_Regular;
+  font-size: var(--h4);
   line-height: 64px;
 }
 h2{
   font-family: Manier_Light;
-  font-size: var(--h2);
+  font-size: var(--h4);
   line-height: 0.9;
 }
 h3{
   font-family: Manier_Light;
-  font-size: var(--h3);
+  font-size: var(--h4);
   line-height: 0.9;
 }
 h4{

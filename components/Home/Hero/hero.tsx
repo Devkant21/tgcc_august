@@ -54,7 +54,7 @@ const Hero = () => {
           variants={containerVariants}
           className="flex flex-col w-full md:w-1/2 max-w-[569px] space-y-8 p-4 md:p-0"
         >
-          <motion.h1 variants={childVariants} className="">
+          <motion.h1 variants={childVariants} className="leading-[40px] md:leading-[64px]">
             A Timeless Ode to the Spirits of India
           </motion.h1>
           <motion.div

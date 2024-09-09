@@ -87,10 +87,10 @@ const Footer = () => {
                             <li>Whitefield, Bangalore XXXXXX</li>
                         </ul>
                     </div> */}
-                    <div className="flex flex-col md:flex-row md:items-end md:gap-6">
+                    {/* <div className="flex flex-col md:flex-row md:items-end md:gap-6">
                         <p className="flex gap-1 items-center"><b>Contact Us:</b> <MdPhoneIphone size={16} /> +91 9876543210</p>
                         <p className="flex gap-1 items-center"><b>Email: </b> <MdMailOutline size={16} /> xyz@tgccinfo.com</p>
-                    </div>
+                    </div> */}
                     <div className="flex items-end gap-6">
                         <Link href='https://facebook.com/tgccindia' target="_blank" rel="noopener noreferrer">
                             <FaFacebook size={24} />
