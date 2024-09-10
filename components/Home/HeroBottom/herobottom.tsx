@@ -24,7 +24,7 @@ const HeroBottom = () => {
         </motion.h2>
         <motion.p
           variants={childVariants}
-          className="bottomP text-center md:text-justify font-thin max-w-[800px]"
+          className="text-center font-thin max-w-[600px]"
         >
           We exist in the passionate pursuit of the good. We are driven to
           become a benchmark for positive change in the world by producing more

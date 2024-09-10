@@ -3,7 +3,7 @@
 }
 
 .aboutBody p {
-    font-size: clamp(1.4rem, 0.58vw + 1rem, 2.938rem);
+    /* font-size: clamp(1.4rem, 0.58vw + 1rem, 2.938rem); */
 }
 
 .heading {
