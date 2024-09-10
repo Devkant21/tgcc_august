@@ -11,7 +11,7 @@
     font-family: Manier_Light;
 }
 .mapDesc{
-    font-size: 18.75px;
+    /* font-size: 18.75px; */
 }
 .fade-in {
     animation: fadeInScaleUp 1s forwards;

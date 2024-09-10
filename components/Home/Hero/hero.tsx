@@ -59,7 +59,7 @@ const Hero = () => {
           </motion.h1>
           <motion.div
             variants={childVariants}
-            className="para line-clamp-5 "
+            className="line-clamp-5 "
           >
             Embark on a journey where exploration, tasting, and learning
             intertwine to redefine epicurean experiences.
