@@ -4,16 +4,16 @@ import './BookNow.css';
 import { useState } from 'react';
 
 const BookNow = () => {
-    const [name, setName] = useState('');
-    const [pronoun, setPronoun] = useState('');
+    const [firstname, setFirstname] = useState('');
+    const [lastname, setLastname] = useState('');
     const [tel, setTel] = useState('');
-    const [age, setAge] = useState('');
+    // const [age, setAge] = useState('');
     const [email, setEmail] = useState('');
-    const [visitDate, setVisitDate] = useState('');
-    const [visitTime, setVisitTime] = useState('');
-    const [people, setPeople] = useState('');
-    const [veg, setVeg] = useState('');
-    const [nonVeg, setNonVeg] = useState('');
+    // const [visitDate, setVisitDate] = useState('');
+    // const [visitTime, setVisitTime] = useState('');
+    // const [people, setPeople] = useState('');
+    // const [veg, setVeg] = useState('');
+    // const [nonVeg, setNonVeg] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -22,7 +22,7 @@ const BookNow = () => {
         setIsSubmitting(true);
         setIsSuccess(false);
 
-        const data = { name, pronoun, tel, age, email, visitDate, visitTime, people, veg, nonVeg };
+        const data = { firstname, lastname, tel, email };
 
         try {
             const response = await fetch('/api/book', {
@@ -36,16 +36,12 @@ const BookNow = () => {
             const result = await response.json();
 
             if (result.success) {
-                setName('');
-                setPronoun('');
+                setFirstname('');
+                setLastname('');
                 setTel('');
-                setAge('');
+               
                 setEmail('');
-                setVisitDate('');
-                setVisitTime('');
-                setPeople('');
-                setVeg('');
-                setNonVeg('');
+               
                 setIsSuccess(true);
             } else {
                 alert('Failed to submit booking.');
@@ -59,31 +55,31 @@ const BookNow = () => {
 
     return (
         <section className="BookNow md:px-[56px] pb-20">
-            {/* <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10"> */}
-                <div className=" flex flex-col items-center justify-center -mt-10">
-                <button className="sm:text-4xl text-lg rounded-full bg-slate-900 p-6">Book Now</button>
+            <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10">
+                {/* <div className=" flex flex-col items-center justify-center -mt-10"> */}
+                <h1 className="sm:text-6xl text-lg  p-8">Know More</h1>
                 {/* <button className="text-4xl pb-10 rounded-full bg-slate-900 p-8">Book Now</button> */}
                 
-                {/* <div className="w-full">
+                <div className="w-full">
                     <form className='flex flex-col flex-wrap gap-6 w-full md:space-y-4 justify-center' onSubmit={handleSubmit}>
                         <div className='flex flex-wrap gap-6 w-full'>
                             <input
-                                aria-label="Name"
-                                placeholder="Name: "
+                                aria-label="First Name"
+                                placeholder=" First Name: "
                                 type='text'
                                 className="p-4 flex-grow bgColor text-white placeholder-white font-bold"
                                 required
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
+                                value={firstname}
+                                onChange={(e) => setFirstname(e.target.value)}
                             />
                             <input
-                                aria-label="Pronoun"
-                                placeholder="Pronoun: "
+                                aria-label="Last Name"
+                                placeholder="Last Name: "
                                 type='text'
                                 className="p-4 flex-grow bgColor text-white placeholder-white font-bold max-w-[350px]"
                                 required
-                                value={pronoun}
-                                onChange={(e) => setPronoun(e.target.value)}
+                                value={lastname}
+                                onChange={(e) => setLastname(e.target.value)}
                             />
                             <input
                                 aria-label="Contact"
@@ -94,17 +90,6 @@ const BookNow = () => {
                                 value={tel}
                                 onChange={(e) => setTel(e.target.value)}
                             />
-                        </div>
-                        <div className='flex flex-wrap gap-6 w-full'>
-                            <input
-                                aria-label="Age"
-                                placeholder="Age: "
-                                type='number'
-                                className="p-4 flex-grow bgColor text-white placeholder-white font-bold md:max-w-[150px]"
-                                required
-                                value={age}
-                                onChange={(e) => setAge(e.target.value)}
-                            />
                             <input
                                 aria-label="Email"
                                 placeholder="Email ID: "
@@ -114,7 +99,27 @@ const BookNow = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                            <input
+                        </div>
+                        <div className='flex flex-wrap gap-6 w-full'>
+                            {/* <input
+                                aria-label="Age"
+                                placeholder="Age: "
+                                type='number'
+                                className="p-4 flex-grow bgColor text-white placeholder-white font-bold md:max-w-[150px]"
+                                required
+                                value={age}
+                                onChange={(e) => setAge(e.target.value)}
+                            /> */}
+                            {/* <input
+                                aria-label="Email"
+                                placeholder="Email ID: "
+                                type='email'
+                                className="p-4 flex-grow bgColor text-white placeholder-white font-bold"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            /> */}
+                            {/* <input
                                 aria-label="Visit Date"
                                 placeholder="Visit Date: "
                                 type='date'
@@ -122,8 +127,8 @@ const BookNow = () => {
                                 required
                                 value={visitDate}
                                 onChange={(e) => setVisitDate(e.target.value)}
-                            />
-                            <input
+                            /> */}
+                            {/* <input
                                 aria-label="Visit Time"
                                 placeholder="Visit Time: "
                                 type='time'
@@ -131,9 +136,9 @@ const BookNow = () => {
                                 required
                                 value={visitTime}
                                 onChange={(e) => setVisitTime(e.target.value)}
-                            />
+                            /> */}
                         </div>
-                        <div className='flex flex-wrap gap-6 w-full md:px-[60px]'>
+                        {/* <div className='flex flex-wrap gap-6 w-full md:px-[60px]'>
                             <input
                                 aria-label="Number of Adults"
                                 placeholder="Number of Adults: "
@@ -161,9 +166,9 @@ const BookNow = () => {
                                 value={nonVeg}
                                 onChange={(e) => setNonVeg(e.target.value)}
                             />
-                        </div>
+                        </div> */}
                         {isSuccess && (
-                            <p className='text-green-500 text-center'>Form submission successful!</p>
+                            <p className='text-green-500 text-center'>Form submission successful! Allow us to reach out to you</p>
                         )}
                         <p className='text-center'>*Everyone in the group to be 25 and above</p>
                         <div className='flex items-center justify-center'>
@@ -176,7 +181,7 @@ const BookNow = () => {
                             </button>
                         </div>
                     </form>
-                </div> */}
+                </div> 
             </div>
         </section>
     );
