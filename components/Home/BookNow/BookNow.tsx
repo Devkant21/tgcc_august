@@ -39,9 +39,9 @@ const BookNow = () => {
                 setFirstname('');
                 setLastname('');
                 setTel('');
-               
+
                 setEmail('');
-               
+
                 setIsSuccess(true);
             } else {
                 alert('Failed to submit booking.');
@@ -57,10 +57,10 @@ const BookNow = () => {
         <section className="BookNow md:px-[56px] pb-20">
             <div className="bg-[#2E4149] flex flex-col items-center justify-center p-10">
                 {/* <div className=" flex flex-col items-center justify-center -mt-10"> */}
-                <h1 className="sm:text-6xl text-lg  p-8">Know More</h1>
+                {/* <h1 className="sm:text-6xl text-lg  p-8">Know More</h1> */}
                 {/* <button className="text-4xl pb-10 rounded-full bg-slate-900 p-8">Book Now</button> */}
-                
-                <div className="w-full">
+
+                <div className="w-full flex flex-col items-center justify-center">
                     <form className='flex flex-col flex-wrap gap-6 w-full md:space-y-4 justify-center' onSubmit={handleSubmit}>
                         <div className='flex flex-wrap gap-6 w-full'>
                             <input
@@ -167,21 +167,28 @@ const BookNow = () => {
                                 onChange={(e) => setNonVeg(e.target.value)}
                             />
                         </div> */}
-                        {isSuccess && (
-                            <p className='text-green-500 text-center'>Form submission successful! Allow us to reach out to you</p>
-                        )}
                         <p className='text-center'>*Everyone in the group to be 25 and above</p>
                         <div className='flex items-center justify-center'>
-                            <button
-                                type="submit"
-                                className={`p-4 min-w-[200px] rounded-3xl bg-[#D9D9D9] text-[#416E80] ${isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer'}`}
-                                disabled={isSubmitting}
-                            >
-                                <p>{isSubmitting ? 'Submitting...' : 'Submit'}</p>
-                            </button>
+                            {isSuccess ? (
+                                <p className='text-white text-center'>
+                                    Your details have been successfully received, please allow us to get back to you!
+                                </p>
+                            ) : (
+                                <button
+                                    type="submit"
+                                    className={`p-4 min-w-[200px] rounded-3xl bg-[#D9D9D9] text-[#416E80] ${isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                                    disabled={isSubmitting}
+                                >
+                                    <p>{isSubmitting ? 'Submitting...' : 'Submit'}</p>
+                                </button>
+                            )}
                         </div>
                     </form>
-                </div> 
+                    <button
+                        className={`p-4 min-w-[200px] rounded-3xl bg-[#0B0B0B] text-white mt-10`}>
+                        <p>Know More</p>
+                    </button>
+                </div>
             </div>
         </section>
     );
