@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       {
         url: "https://i.ibb.co/TH8pZVt/tgcc-logo.png",
         width: 1200,
-        height: 630,
+        height: 600,
         alt: "TGCC",
       },
     ],

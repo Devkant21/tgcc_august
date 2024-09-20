@@ -7,13 +7,7 @@ const BookNow = () => {
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [tel, setTel] = useState('');
-    // const [age, setAge] = useState('');
     const [email, setEmail] = useState('');
-    // const [visitDate, setVisitDate] = useState('');
-    // const [visitTime, setVisitTime] = useState('');
-    // const [people, setPeople] = useState('');
-    // const [veg, setVeg] = useState('');
-    // const [nonVeg, setNonVeg] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
 
@@ -36,6 +30,7 @@ const BookNow = () => {
             const result = await response.json();
 
             if (result.success) {
+                // Clear form fields
                 setFirstname('');
                 setLastname('');
                 setTel('');
