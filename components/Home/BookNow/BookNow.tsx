@@ -175,15 +175,15 @@ const BookNow = () => {
                                     className={`p-4 min-w-[200px] rounded-3xl bg-[#D9D9D9] text-[#416E80] ${isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                                     disabled={isSubmitting}
                                 >
-                                    <p>{isSubmitting ? 'Submitting...' : 'Submit'}</p>
+                                    <p>{isSubmitting ? 'Submitting...' : 'Know More'}</p>
                                 </button>
                             )}
                         </div>
                     </form>
-                    <button
+{/*                     <button
                         className={`p-4 min-w-[200px] rounded-3xl bg-[#0B0B0B] text-white mt-10`}>
                         <p>Know More</p>
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </section>
