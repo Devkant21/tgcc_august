@@ -42,7 +42,8 @@ const Navbar = () => {
           <Link href="#whoweare">Who we are</Link>
         </div>
         <div className="navLink">
-          <Link href="#experience">Experience</Link>
+          {/* <Link href="#experience">Experience Home</Link> */}
+          <Link href="#academy">Experience Home</Link>
         </div>
         <div className="mr-12">
           <Link href="/">
@@ -99,7 +100,7 @@ const Navbar = () => {
               <Link href="#">Who we are</Link>
             </li>
             <li>
-              <Link href="#">Experience</Link>
+              <Link href="#academy">Experience Home</Link>
             </li>
             <li>
               <Link href="#">Blogs</Link>

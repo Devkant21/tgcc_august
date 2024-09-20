@@ -72,7 +72,7 @@ const Hero = () => {
         variants={containerVariants}
         className="pt-4"
       >
-        <button className="heroButton p-4 md:min-w-[360px] md:min-h-[81px] flex items-center justify-center gap-4">
+        {/* <button className="heroButton p-4 md:min-w-[360px] md:min-h-[81px] flex items-center justify-center gap-4">
           KNOW MORE
           <span>
             <Image
@@ -83,7 +83,7 @@ const Hero = () => {
               className="w-[30px] h-auto"
             />
           </span>
-        </button>
+        </button> */}
       </motion.div>
     </section>
   );
