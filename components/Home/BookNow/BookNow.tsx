@@ -31,6 +31,7 @@ const BookNow = () => {
 
             if (result.success) {
                 // Clear form fields
+                // Clear form fields
                 setFirstname('');
                 setLastname('');
                 setTel('');
