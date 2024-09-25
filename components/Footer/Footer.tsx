@@ -60,10 +60,10 @@ const FootLinks = [
 
 const Footer = () => {
     return (
-        <section className="md:px-[112px] bg-[#2E4149] py-20 px-4 md:px-0">
+        <section className="md:px-[60px] bg-[#2E4149] py-12 px-4">
             <footer className="flex flex-col items-center justify-center space-y-16">
                 <div className="w-full flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0 p-4 md:p-0">
-                    <div>
+                    <div className='block md:hidden'>
                         <Image src='/svg/whitelogo.svg' alt='LOGO' width={0} height={0} className="w-[100px] h-[100px]" />
                     </div>
                     {/* <div className="space-y-3">
@@ -91,18 +91,18 @@ const Footer = () => {
                         <p className="flex gap-1 items-center"><b>Contact Us:</b> <MdPhoneIphone size={16} /> +91 9876543210</p>
                         <p className="flex gap-1 items-center"><b>Email: </b> <MdMailOutline size={16} /> xyz@tgccinfo.com</p>
                     </div> */}
-                    <div className="flex items-end gap-6">
+                    {/* <div className="flex items-end gap-6">
                         <Link href='https://facebook.com/tgccindia' target="_blank" rel="noopener noreferrer">
                             <FaFacebook size={24} />
                         </Link>
                         <Link href='https://instagram.com/tgccindia' target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={24} />
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col items-center justify-center text-center">
-                    <p>*This content is intended for audience above legal drinking age as specified by their state/country of residence. Enjoy & Share Responsibly.</p>
-                    <div className="max-w-[900px] ">
+                    <p className="font-semibold">*This content is intended for audience above legal drinking age as specified by their state/country of residence. Enjoy & Share Responsibly.</p>
+                    <div className="max-w-[1100px] mt-10">
                         {FootLinks.map((link, index) => (
                             <React.Fragment key={index}>
                                 <Link href={link.urlLink} className="text-white hover:text-gray-900 mb-2">
@@ -112,7 +112,10 @@ const Footer = () => {
                             </React.Fragment>
                         ))}
                     </div>
-                    <p className="font-bold">Please do not share with anyone under the legal purchase age for alcohol. Drink Responsibly.</p>
+                    <p className="">Please do not share with anyone under the legal purchase age for alcohol. Drink Responsibly.</p>
+                </div>
+                <div className='hidden md:block absolute bottom-0 right-0 p-10'>
+                    <Image src='/svg/whitelogo.svg' alt='LOGO' width={0} height={0} className="w-[100px] h-[100px]" />
                 </div>
             </footer>
         </section>
