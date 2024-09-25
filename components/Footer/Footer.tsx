@@ -9,17 +9,17 @@ const FootLinks = [
     {
         no: 1,
         title: "Condition of Use",
-        urlLink: "#",
+        urlLink: "https://footer.diageohorizon.com/dfs/assets/in.thebar.com/TnC_eni.html?locale=eni-in",
     },
     {
         no: 2,
         title: "Diageo Privacy Centre",
-        urlLink: "#",
+        urlLink: "https://www.diageoprivacycentre.com/en-in?pp=https%3A%2F%2Ffooter.diageohorizon.com%2Fdfs%2Fassets%2Fin.thebar.com%2FPrivacyPolicy_eni.html%3Flocale%3Deni-in",
     },
     {
         no: 3,
         title: "UGC Policy",
-        urlLink: "#",
+        urlLink: "https://footer.diageohorizon.com/dfs/assets/in.thebar.com/UGC_eni.html?locale=eni-in",
     },
     {
         no: 4,
@@ -34,17 +34,17 @@ const FootLinks = [
     {
         no: 6,
         title: "Privacy and Cookie Notice",
-        urlLink: "#",
+        urlLink: "https://footer.diageohorizon.com/dfs/assets/in.thebar.com/PrivacyPolicy_eni.html?locale=eni-in",
     },
     {
         no: 7,
         title: "Drink Responsibly",
-        urlLink: "#",
+        urlLink: "http://www.responsibledrinking.org/",
     },
     {
         no: 8,
         title: "DrinkIQ",
-        urlLink: "#",
+        urlLink: "https://www.drinkiq.com/en-in",
     },
     // {
     //     no: 9,
