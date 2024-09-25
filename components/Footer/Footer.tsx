@@ -46,11 +46,11 @@ const FootLinks = [
         title: "DrinkIQ",
         urlLink: "#",
     },
-    {
-        no: 9,
-        title: "TGCC.com",
-        urlLink: "#",
-    },
+    // {
+    //     no: 9,
+    //     title: "TGCC.com",
+    //     urlLink: "#",
+    // },
     {
         no: 10,
         title: "COPYRIGHT © 2024 DIAGEO.",
