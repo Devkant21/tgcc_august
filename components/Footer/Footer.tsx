@@ -24,7 +24,7 @@ const FootLinks = [
     {
         no: 4,
         title: "Accessibility",
-        urlLink: "#",
+        urlLink: "https://footer.diageohorizon.com/dfs/assets/in.thebar.com/in.thebar.com_eni-in_final_accessibility.html",
     },
     {
         no: 5,
