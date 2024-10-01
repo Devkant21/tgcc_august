@@ -9,7 +9,7 @@ const CarouselData = [
     {
         img: '/image/brand.webp',
         title: 'Flavour Labs',
-        desc: 'Discover the magic of rare Indian spirits with a guided tour of our experience centre',
+        desc: 'Delve into the magic of rare Indian spirits with an educational, immersive tour at our experience center, where exploration and learning go hand in hand.',
     },
     {
         img: '/image/brand2.webp',
