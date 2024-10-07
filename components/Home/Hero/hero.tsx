@@ -61,7 +61,7 @@ const Hero = () => {
             variants={childVariants}
             className="line-clamp-5 "
           >
-           Embark on a journey where exploration and learning intertwine to redefine refined immersive experiences.
+           Embark on a journey where exploration and learning intertwine to redefine immersive experiences.
           </motion.div>
         </motion.div>
       </div>
